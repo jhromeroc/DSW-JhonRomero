@@ -39,13 +39,63 @@
         <!-- Contenido principal de la pagina -->
         <section>
             <h1>Propósito del sitio</h1>
-            <p>Explica se manera clara y sencilla el uso de los atributos flexbox que se pueden aplicar a los elementos de una pagina y que permiten posicionarlos de maneras diferentes a las disponible anteriormente, por ejemplo, estos de pueden aplicar a las listas de elementos y cajas de enlaces para darles una mejor apariencia y hacer mas llamativos los diseños de las páginas web.</p>
+            <p>Explica se manera clara y sencilla el uso de los atributos como flexbox que se pueden aplicar a los elementos de una pagina y que permiten posicionarlos de maneras diferentes a las disponible anteriormente, por ejemplo, estos de pueden aplicar a las listas de elementos y cajas de enlaces para darles una mejor apariencia y hacer mas llamativos los diseños de las páginas web.</p>
           </section>
           <article>
               <h1>Flexbox</h1>
-              <p></p>
+              <p>Flexbox es un sistema de elementos flexibles que llega con la idea de olvidar estos mecanismos y acostumbrarnos a una mecánica más potente, limpia y personalizable, en la que los elementos HTML se adaptan y colocan automáticamente y es más fácil personalizar los diseños. Está especialmente diseñado para crear, mediante CSS, estructuras de una sola dimensión.
+              <p><img src="img/Flex box.png"></p>
+              <h3>Estructura</h3>
+                La estructura de Flexbox se compone de contenedores padre e hijos (Contenedor-Flex y Elementos-Flex respectivamente)
+                
+              <p>El Contenedor-Flex es nuestro contenedor padre, y es él quién va a contener a todos los elementos hijos a los cuáles queremos posicionar.</p>
+              <p>El Elemento-Flex es nuestro elemento hijo, el cual utilizará todo el espacio disponible para ubicarse de acuerdo con las propiedades a las cuales este sometido junto a los demás Elementos-Flex contenidos.
+                  Cada diseño flex está compuesto por dos ejes: </p>
+                
+              <p>Un eje principal que define el posicionamiento horizontal de los Elementos-Flex. 
+                  Un eje secundario que define el posicionamiento vertical de los Elementos-Flex.
+                  El Contendor-Flex contiene direcciones que definen el origen y el fin del flujo de Elementos-Flex:
+                  Inicio principal 
+                  Fin principal
+                  Inicio secundario
+                  Fin secundario
+                   Cada Elemento-Flex está definido por sus dimensiones, anchura (tamaño principal) y altura (tamaño secundario) que dependen del eje principal y el eje secundario.
+              </p>
+
+              <h3>Propiedades</h3>
+              Si queremos utilizar las propiedades de Flexbox tendremos que definirlo mediante la propiedad display y su valor flex o inline-flex dentro del selector que nosotros definamos que es nuestro elemento padre o Contenedor-Flex.</p>
+              <h4>Flex-direction</h4>
+              <p>Es la encargada de definir el eje principal y secundario de nuestros elementos hijos. Estos ejes como ya se mencionó pueden se verticales, formando columnas y horizontales formando filas.</p>
+              <h4>Flex-wrap</h4>
+              <p>Por defecto flex, trata de disponer de los elementos en una misma línea, si no es el caso que necesitas, con flex-wrap podes ordenar los elementos en más de una fila o columna.</p>
+              <h4>Justify-content</h4>
+              <p>Cuando nombramos el eje principal de un elemento padre, es decir el eje horizontal, se destaca esta propiedad para dar direccionamiento a los elementos hijos.
+                  Align-items
+                  Al igual que justify-content esta propiedad te permite distribuir los elementos en un eje, pero esta vez en el eje vertical.
+              </p>
+              <h1>Listas no ordenadas: &lt;ul&gt;&lt;/ul&gt;</h1>
+              <p>Las listas no ordenadas van dentro de la etiqueta &lt;ul&gt; HTML y de su cierre &lt;/ul&gt;. Cada punto que queramos añadir a la lista, lo haremos dentro de la etiqueta &lt;li&gt; y su cierre.</p>
+              <p>Si no le indicamos nada a la etiqueta &lt;li&gt; HTML, ésta se generará de forma automática. Pero si queremos definir nosotros mismo el símbolo del punto, podemos gracias al atributo “type”.</p>
+              <p>Así podemos hacer que la lista esté definida por puntos negros (li type=” disc”), por puntos con el fondo blanco (li type=”circle”) o por cuadrados (li type=”square”). Aunque esta apariencia dependerá del navegador. Hay algunos navegadores que dan otras apariencias a estos mismos atributos.</p>
+              <h1>Listas ordenadas: &lt;ol&gt;&lt;/ol&gt;</h1>
+              <p>Las listas ordenadas van enmarcadas dentro de las etiquetas &lt;ol&gt; &lt;/ol&gt;. Cada punto de la lista se escribe con la misma etiqueta que en las no numeradas: &lt;li&gt;. Pero al ser listas ordenadas los símbolos serán números y éstos se irán generando automáticamente por orden, conforme escribamos nuevos puntos.</p>
+              <h1>Enlaces</h1>
+              <p>Lo que caracteriza a la web como medio de comunicación es la navegación por medio de hipervínculos (links o enlaces). Esta conexión entre archivos permite al usuario elegir el sentido de la navegación.</p>
+              <p>En el HTML los enlaces se marcan con la etiqueta &lt;a&gt;&lt;/a&gt; y el atributo principal es href="" donde se escribe la ubicación del archivo de destino que puede estar en la misma carpeta que el archivo que lo está llamando, en otra carpeta del mismo sitio o en otro sitio web.</p>
+              <p>Entre las etiquetas &lt;a href=""&gt;&lt;/a&gt; se puede colocar cualquier elemento html que funcionará como botón, generalmente se coloca un texto o una imagen. Si es un texto, el navegador por defecto lo muestra en color azul y subrayado. Si es una imagen, algunos navegadores especialmente las versiones anteriores a las actuales, le pueden agregar un borde azul</p>
+              <h3>Rutas de enlaces:</h3>
+              <p>Se llama ruta al valor que se escribe dentro del atributo href="" y se pueden clasificar en dos tipos:</p>
+              <h3>Rutas absolutas:</h3>
+              <p>Las rutas absolutas son las que definen la ubicación completa de un archivo en la web y empiezan desde https://nombredelsitio.com/archivo.html (el archivo de destino puede ser de cualquier extensión). Por ejemplo, si queremos vincular nuestro sitio con Facebook, usaríamos una ruta absoluta y el código sería:</p>
+              <p>&lt;a href="https://www.facebook.com/pagina"&gt;Estamos en Facebook&lt;/a&gt;</p>
+              <h3>Rutas relativas:</h3>
+              <p>Las rutas relativas en cambio definen la ubicación del archivo de destino en relación a la ubicación del archivo que lo está llamando. Ejemplo: si el archivo index.html vincula con quien-soy.html y están en la misma carpeta, el código sería asi:</p>
+              <p>&lt;a href="quien-soy.html"&gt;Quién soy&lt;/a&gt;.</p>
           </article>
           <hr>
+          <h2>Mi mockup</h2>
+          <img src="img/Mockup.png">
+
         <!-- Pie de pagina -->
           <footer>
               <p>Correo: jhromero81@gmail.com<br>
