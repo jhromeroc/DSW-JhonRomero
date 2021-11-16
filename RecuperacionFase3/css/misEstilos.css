@@ -3,7 +3,7 @@
     border-radius: 3px;
 }
 header{
-    background-color: rgb(18, 14, 24);
+    background-color: #222831;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,16 +16,18 @@ header{
 }
 aside{
     grid-column: 1/2;
-    background-color: rgb(159, 92, 226);
+    background-color: #393E46;
+    text-align: center;
+    color: white;
 }
 section{
     grid-column: 2/5;
-    background-color: rgb(218, 199, 238);
+    background-color: #B4C6A6;
 }
 
 footer{
     text-align: center;
-    background-color: rgb(2, 31, 2);
+    background-color: #222831;
     color: white;
     padding: 10px;
 }
